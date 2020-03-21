@@ -29,7 +29,12 @@ essentials:
 	$(eval snapList += pdftk)
 
 programming:
-	$(eval packageList += g++ git)
+	$(eval packageList += \
+		g++\
+	       	git\
+	       	cmake\
+		doxygen\
+		graphviz)
 	
 scientific:
 	$(eval packageList += \
@@ -41,6 +46,14 @@ scientific:
 
 graphix:
 	$(eval packageList += gimp inkscape)
+
+
+bashrc=~/.bashrc
+aliases:
+	@echo "\033[1;32m[!]Adding aliases to bashrc: $(bashrc) \033[0m"
+	@echo "##### aliases #####" >> $(bashrc)
+	@echo "alias q=exit" >> $(bashrc)
+	@echo "alias fuck='sudo \$$(history -p \!\!)'" >> $(bashrc)
 
 code-extensions:
 	code --install-extension esbenp.prettier-vscode
