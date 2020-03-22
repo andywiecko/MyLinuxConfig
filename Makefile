@@ -34,7 +34,8 @@ programming:
 	       	git\
 	       	cmake\
 		doxygen\
-		graphviz)
+		graphviz\
+		nlohmann-json-dev)
 	
 scientific:
 	$(eval packageList += \
@@ -52,8 +53,9 @@ bashrc=~/.bashrc
 aliases:
 	@echo "\033[1;32m[!]Adding aliases to bashrc: $(bashrc) \033[0m"
 	@echo "##### aliases #####" >> $(bashrc)
-	@echo "alias q=exit" >> $(bashrc)
-	@echo "alias fuck='sudo \$$(history -p \!\!)'" >> $(bashrc)
+	echo "alias q=exit" >> $(bashrc)
+	echo "alias fuck='sudo \$$(history -p \!\!)'" >> $(bashrc)
+	echo "alias update='sudo apt update && sudo apt upgrade'" >> $(bashrc)
 
 code-extensions:
 	code --install-extension esbenp.prettier-vscode
