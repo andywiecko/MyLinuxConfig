@@ -31,8 +31,8 @@ essentials:
 programming:
 	$(eval packageList += \
 		g++\
-	       	git\
-	       	cmake\
+	    git\
+	    cmake\
 		doxygen\
 		graphviz\
 		nlohmann-json-dev)
@@ -48,7 +48,6 @@ scientific:
 graphix:
 	$(eval packageList += gimp inkscape)
 
-
 bashrc=~/.bashrc
 aliases:
 	@echo "\033[1;32m[!]Adding aliases to bashrc: $(bashrc) \033[0m"
@@ -59,6 +58,8 @@ aliases:
 
 code-extensions:
 	code --install-extension esbenp.prettier-vscode
+	code --install-extension foxundermoon.shell-format
+	code --install-extension mammothb.gnuplot
 	code --install-extension ms-python.python
 	code --install-extension ms-vscode.cpptools
 	code --install-extension VisualStudioExptTeam.vscodeintellicode
