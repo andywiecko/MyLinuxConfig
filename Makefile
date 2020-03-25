@@ -20,7 +20,10 @@ essentials:
 	$(eval packageList += \
 		htop\
 		vim\
+		firefox\
 		gnuplot\
+		hwinfo\
+		cpuid\
 		moreutils\
 		ssh\
 		vlc\
