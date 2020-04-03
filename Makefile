@@ -20,6 +20,7 @@ essentials:
 	$(eval packageList += \
 		htop\
 		vim\
+		shotwell\
 		firefox\
 		gnuplot\
 		hwinfo\
@@ -60,10 +61,16 @@ aliases:
 	echo "alias update='sudo apt update && sudo apt upgrade'" >> $(bashrc)
 
 code-extensions:
+	code --install-extension cschlosser.doxdocgen
+	code --install-extension DavidAnson.vscode-markdownlint
 	code --install-extension esbenp.prettier-vscode
 	code --install-extension foxundermoon.shell-format
 	code --install-extension mammothb.gnuplot
 	code --install-extension ms-python.python
 	code --install-extension ms-vscode.cpptools
+	code --install-extension streetsidesoftware.code-spell-checker
+	code --install-extension streetsidesoftware.code-spell-checker-polish
 	code --install-extension VisualStudioExptTeam.vscodeintellicode
 	code --install-extension vscode-icons-team.vscode-icons
+	code --install-extension yzhang.markdown-all-in-one
+
