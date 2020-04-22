@@ -27,6 +27,8 @@ essentials:
 		cpuid\
 		moreutils\
 		ssh\
+		msttcorefonts\
+		ttf-mscorefonts-installer\
 		vlc\
 		ffmpeg\
 		librsvg2-bin)
