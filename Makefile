@@ -24,6 +24,7 @@ essentials:
 		firefox\
 		gnuplot\
 		hwinfo\
+		redshift\
 		cpuid\
 		moreutils\
 		ssh\
@@ -37,8 +38,8 @@ essentials:
 programming:
 	$(eval packageList += \
 		g++\
-	    git\
-	    cmake\
+	    	git\
+	    	cmake\
 		doxygen\
 		graphviz\
 		nlohmann-json-dev)
