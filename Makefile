@@ -19,6 +19,7 @@ all: scientific\
 essentials:
 	$(eval packageList += \
 		htop\
+		iotop
 		vim\
 		shotwell\
 		firefox\
