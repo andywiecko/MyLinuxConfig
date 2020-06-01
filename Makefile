@@ -43,6 +43,7 @@ programming:
 	    	cmake\
 		doxygen\
 		graphviz\
+		python3-pip\
 		nlohmann-json-dev)
 	
 scientific:
